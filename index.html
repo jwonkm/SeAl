@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Proejct page for  &quot;Semantic Alignment for Pose-Invariant Identity Preserving Diffusion &quot;">
+  <meta name="keywords" content="Diffusion, Guidance, Noise">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semantic Alignment for Pose-Invariant Identity Preserving Diffusion</title>
+
+</script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SNP8B5VP2B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SNP8B5VP2B');
+  </script>
+  
+
+  <link href="./static/css/sans.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/selection-panel.css">
+  <link rel="icon" type="image/png" href="./asset/seal_icon.png">
+
+  <script src="./static/js/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<!-- Mathjax -->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+    window.MathJax = {
+     tex: {
+       inlineMath: [['$', '$'], ['\\(', '\\)']]
+     }
+   };
+</script>
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://jwonkm.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+                <img src="./asset/seal_icon.png" alt="SeAl Icon" style="height: 1.5em; vertical-align: middle; margin-right: 0.2em; padding-bottom: 5px;">
+                <span style="color: #5a6ead;">Se</span>mantic <span style="color: #5a6ead;">Al</span>ignment for Pose-Invariant Identity Preserving Diffusion
+              </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://jwonkm.github.io/">Jiwon Kim</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://github.com/shhh0620/">SeonHwa Kim</a><sup>1</sup>,</span>
+              <span class="author-block">
+                Soobin Park</a><sup>2</sup>,</span>
+              </span>
+            <span class="author-block">
+              <a href="https://scholar.google.co.kr/citations?user=mqNGNqEAAAAJ&hl=en">Eunju Cha</a><sup>2,†</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://ipa.korea.ac.kr/">Kyong Hwan Jin</a><sup>1,†</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Korea University</span> &nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>Sookmyung Women's University</span> &nbsp;&nbsp;
+          </div>
+
+          <div class="is-size-3 insts">
+            <strong><span style="color: #2d44ab;">CVPR 2026</span></strong>
+          </div>
+          
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://github.com/jwonkm/SeAl"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (coming soon)</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/jwonkm/SeAl"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (coming soon)</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="asset/concept_fig.png" style="width: 70%; display: block; margin: 0 auto;">
+      <h2 class="subtitle has-text-centered" >
+        <br><strong>SeAl</strong> enhances pose-invariant generation in identity preserving diffusion models. 
+        <p>By explicitly aligning semantic features across poses, our approach ensures precise identity capture without degrading image quality or requiring extensive re-training.</p>
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Highlights -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified" style="font-size: 18px;">
+            Recent T2I diffusion models have evolved to control multiple conditions, including structure, appearance, and text prompt. Despite this progress, training-based methods demand heavy computation, whereas training-free methods often `re-imagine' the subject to satisfy given structure, thereby compromising identity preservation and attenuating fine textures.
+            We propose <strong>SeAl (Semantic Alignment for Pose-Invariant Identity Preserving Diffusion)</strong>, a novel training-free framework that addresses the 're-imagining' problem from the perspective of 'infusion'. SeAl integrates structure, appearance, and text prompt with three modules: AnchorAlign pre-aligns spatial discrepancies, Reference-guided Appearance Infusion injects identity via semantic matching, and Delta-Bridge leverages the guidance delta to mediate text–appearance conflicts. We demonstrate that our method faithfully reflects all three control factors and dramatically reduces the identity leakage endemic to prior methods. Notably, SeAl excels on challenging datasets where identity preservation typically fails (e.g., distinctive animal features or complex human attire), establishing a novel paradigm for training-free identity preservation in diffusion models.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="margin-top: -20px">Architecture</h2>
+
+        <img src="asset/pipeline.png" class="center">
+
+        <div class="content has-text-justified" style="margin-top: 15px; text-align: left; font-size: 18px;">
+          SeAl is a novel training-free framework that achieves comprehensive semantic alignment by integrating geometric pre-processing, U-Net attention control, and guidance manipulation during sampling. It systematically resolves structural misalignment between control images, infuses the subject's identity via direct attention injection, and incorporates the user's textual intent through guidance correction. The process consists of three key components:
+        </div>
+
+        <div class="columns is-centered" style="margin-top: 30px;">
+          
+          <div class="column is-one-third">
+            <h3 class="title is-5" style="min-height: 48px;">AnchorAlign</h3>
+            <div style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.04); border: 1px solid #f5f5f5; padding: 15px; margin-bottom: 15px; display: flex; justify-content: center; align-items: center; height: 180px;">
+              <img src="asset/step1.png" alt="AnchorAlign" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+            </div>
+            <p class="content has-text-justified" style="font-size: 15px;">
+              Pre-aligns spatial discrepancies by geometrically matching the structure to the appearance anchor via a two-step scale-and-translate operation, establishing a stable foundation for fusion.
+            </p>
+          </div>
+
+          <div class="column is-one-third">
+            <h3 class="title is-5" style="min-height: 48px;">Reference-guided<br>Appearance Infusion</h3>
+            <div style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.04); border: 1px solid #f5f5f5; padding: 15px; margin-bottom: 15px; display: flex; justify-content: center; align-items: center; height: 180px;">
+              <img src="asset/step2.png" alt="Appearance Infusion" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+            </div>
+            <p class="content has-text-justified" style="font-size: 15px;">
+              Directly injects fine-grained identity without corrupting the target structure by caching and selectively infusing appearance Key and Value pairs into self-attention blocks based on semantic matching.
+            </p>
+          </div>
+
+          <div class="column is-one-third">
+            <h3 class="title is-5" style="min-height: 48px;">Delta-Bridge</h3>
+            <div style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.04); border: 1px solid #f5f5f5; padding: 15px; margin-bottom: 15px; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 180px; overflow-x: auto;">
+              <div style="font-size: 0.8em; text-align: center;">
+                $$g_{gen} = \epsilon_{\theta}(z_t, c_{gen}) - \epsilon_{\theta}(z_t, \emptyset)$$
+                $$g_{app} = \epsilon_{\theta}(z_t, c_{app}) - \epsilon_{\theta}(z_t, \emptyset)$$
+                $$\Delta = g_{gen} - g_{app}$$
+                $$\hat{\epsilon}_{final} = \epsilon_{\theta}(z_t, \emptyset) + w \cdot g_{gen} + \lambda(\gamma) \Delta_{filtered}$$
+              </div>
+            </div>
+            <p class="content has-text-justified" style="font-size: 15px;">
+              Reinterprets the semantic discrepancy between the text and appearance as a controllable correction signal ($\Delta$). It smoothly mediates conflicts by steering the generation purely toward textual changes without destroying the base identity.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light">
+  <div class="hero-body" style="padding: 0;">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title is-3" style="margin-top: 30px;">Qualitative Results</h2>
+      <div id="carouselVideoReconstruction" class="carousel" data-slides-to-show=1 data-slides-to-scroll=1 data_auto_play="true">
+        <div class="item">
+          <img src="asset/qual.001.png">
+        </div>
+        <div class="item">
+          <img src="asset/qual.002.png">
+        </div>
+        <div class="item">
+          <img src="asset/qual.003.png">
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" style="padding-top: 0;">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-10">
+        <h2 class="title is-3 has-text-centered"><br>Conclusion</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            We have introduced SeAl, a novel training-free framework that achieves comprehensive semantic alignment by integrating geometric pre-processing, U-Net attention control, and guidance manipulation during sampling. This mechanism sequentially resolves structural misalignment between control images, infuses the subject's identity via direct attention injection, and finally incorporates the user's textual intent through guidance correction.
+          </p>
+          <p>
+            SeAl resolves the long-standing trade-off in controllable T2I diffusion, between text-prompt alignment, structural fidelity, and appearance identity, to generate high-quality images that accurately reflect user intent. Notably, SeAl demonstrates robust and stable performance in preserving both structure and appearance, even for challenging subjects with distinct identities where prior methods have struggled. SeAl provides a foundation for future advancements in image synthesis that more faithfully align with complex user intent.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      coming soon..
+    </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/cvlab-kaist/PF3plat" disabled="">
+        <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            Template was borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+          under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
