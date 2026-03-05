@@ -3,7 +3,7 @@
 <p align="center">
   <!-- <a href="https://arxiv.org/abs/2508.09575"><img src="https://img.shields.io/badge/arXiv-2508.09575-%23B31B1B"></a> -->
   <a href="https://jwonkm.github.io/SeAl/"><img src="https://img.shields.io/badge/Project%20Page-online-brightgreen"></a>  
-  <a href="https://github.com/jwonkm/SeAl"><img src="https://img.shields.io/github/stars/jwonkm/SeAl?style=social" alt="GitHub stars" /></a>  
+  <a href="https://github.com/jwonkm/SeAl"><img src="https://img.shields.io/github/stars/jwonkm/SeAl?style=social&v=1" alt="GitHub stars" /></a>  
   <br>
 </p>
 
